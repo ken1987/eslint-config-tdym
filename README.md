@@ -15,11 +15,12 @@ eslint-config-tdym for Vue CLI.
 
 - @vue/cli-service ^3.0.0 || ^4.0.0-0
 - eslint ^5.16.0 || ^6.1.0
+- prettier >= 1.13.0
 - vue-template-compiler ^2.0.0
 
 ## 用法
 
-### 安装依赖包以及版本依赖
+### 安装依赖包以及上述版本依赖
 
 ```shell
 yarn add eslint-config-tdym -D
@@ -74,7 +75,6 @@ module.exports = {
   rules: {
     'no-console': isProduction ? 'warn' : 'off',
     'no-debugger': isProduction ? 'warn' : 'off',
-    'no-param-reassign': 0,
   },
 }
 ```
