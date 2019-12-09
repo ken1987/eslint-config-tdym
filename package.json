@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tdym",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "eslint-config-tdym for Vue CLI.",
   "license": "MIT",
   "repository": "ken1987/eslint-config-tdym",
