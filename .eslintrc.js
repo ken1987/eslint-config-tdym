@@ -1,9 +1,7 @@
 module.exports = {
-  env: {
-    node: true,
+  root: true,
+  extends: ['./index.js'],
+  rules: {
+    'no-console': 'off',
   },
-  parserOptions: {
-    parser: 'babel-eslint',
-  },
-  extends: ['./configs/vue.js', './configs/airbnb.js', './configs/prettier.js'],
 }

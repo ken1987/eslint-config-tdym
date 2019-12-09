@@ -1,11 +1,6 @@
-module.exports = {
+const configs = {
   extends: ['airbnb-base'],
   settings: {
-    'import/resolver': {
-      webpack: {
-        config: require.resolve('@vue/cli-service/webpack.config.js'),
-      },
-    },
     'import/extensions': ['.js', '.jsx', '.mjs', '.ts', '.tsx'],
   },
   rules: {
@@ -33,3 +28,15 @@ module.exports = {
     ],
   },
 }
+
+try {
+  configs.settings['import/resolver'] = {
+    webpack: {
+      config: require.resolve('@vue/cli-service/webpack.config.js'),
+    },
+  }
+} catch (error) {
+  console.log('未找到 @vue/cli')
+}
+
+module.exports = configs

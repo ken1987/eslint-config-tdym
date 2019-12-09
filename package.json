@@ -6,11 +6,10 @@
   "repository": "ken1987/eslint-config-tdym",
   "author": "ken",
   "scripts": {
-    "lint": "eslint '.*.js' '**/*.{vue,js}' --fix"
+    "lint": "eslint \".*.js\" \"**/*.{vue,js}\" --fix"
   },
   "files": [
     "configs/",
-    ".eslintrc.js",
     "index.js"
   ],
   "keywords": [
@@ -30,15 +29,11 @@
     "eslint-plugin-vue": "^6.0.1"
   },
   "devDependencies": {
-    "@vue/cli-service": "^4.1.1",
     "eslint": "^6.7.1",
-    "prettier": "^1.18.2",
-    "vue-template-compiler": "^2.6.10"
+    "prettier": "^1.18.2"
   },
   "peerDependencies": {
-    "@vue/cli-service": "^4.1.1",
     "eslint": "^6.7.1",
-    "prettier": "^1.18.2",
-    "vue-template-compiler": "^2.6.10"
+    "prettier": "^1.18.2"
   }
 }

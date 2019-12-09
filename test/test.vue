@@ -4,7 +4,7 @@
       v-for="i in 8"
       :key="i"
       :prop-a="a"
-      long-text="loooooooooooooooooooooooooooooooooooooooooongText"
+      long-text="loooooooooooooooongText"
     >
       test
     </Test>
