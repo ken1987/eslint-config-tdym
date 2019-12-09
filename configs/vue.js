@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:vue-libs/recommended'],
+  extends: ['plugin:vue/recommended'],
   rules: {
     'vue/v-on-function-call': 'error',
     'vue/no-boolean-default': 'error',
