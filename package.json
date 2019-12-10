@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-tdym",
   "version": "0.1.0",
-  "description": "eslint-config-tdym for Vue CLI.",
+  "description": "通过配置化，帮助团队协作开发时保持代码规范与代码风格一致。",
   "license": "MIT",
   "repository": "ken1987/eslint-config-tdym",
   "author": "ken",
@@ -29,11 +29,11 @@
     "eslint-plugin-vue": "^6.0.1"
   },
   "devDependencies": {
-    "eslint": "^6.7.1",
-    "prettier": "^1.18.2"
+    "eslint": "^6.7.2",
+    "prettier": "^1.19.1"
   },
   "peerDependencies": {
-    "eslint": "^6.7.1",
-    "prettier": "^1.18.2"
+    "eslint": "^5.0.0 || ^6.0.0",
+    "prettier": ">= 1.13.0"
   }
 }

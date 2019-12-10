@@ -3,7 +3,6 @@
 ## 背景
 
 - 核心库：[Vue][1]
-- 命令行工具: [vue-cli][11]
 - 代码检查：[eslint][10]
 - 格式化工具：[prettier][2]
 
@@ -11,7 +10,7 @@
 
 ## 版本依赖
 
-- eslint ^5.16.0 || ^6.1.0
+- eslint ^5.0.0 || ^6.0.0
 - prettier >= 1.13.0
 
 ## 用法
@@ -24,7 +23,7 @@ yarn add eslint-config-tdym -D
 npm install eslint-config-tdym -D
 ```
 
-### 添加 prettier 配置项
+### prettier 配置
 
 在项目根目录中，添加 `.prettierrc` 文件，配置如下：
 
@@ -44,12 +43,28 @@ npm install eslint-config-tdym -D
 - `arrowParens`: 总是带括号，方便增减参数、或解构。
 - `htmlWhitespaceSensitivity`: 参考[issue#6061][8]。
 
-### 添加 git 配置项
+## git 配置
 
-在项目中根目录中，添加 `.gitattributes` 文件，配置如下：
+我们约定使用类 Unix 风格的换行符 `\n` 作为标准，[统一的换行符，使得 git diff 更友好][6]。
+
+因此，建议在项目中添加 `.gitattributes` 文件，配置如下：
 
 ```
 * text=auto eol=lf
+```
+
+## 开发工具配置
+
+打通整个开发流程，使得整个过程中的结果保持一致性，开发工具作为最为常见的场景，它能良好的运转至关重要。
+
+### vscode
+
+用 vscode 开发 Vue 相关项目时，会安装插件 vetur 对 .vue 文件进行处理。vetur 默认使用 prettyhtml 对模板语法进行格式化，但它和使用 prettier 得到的不一致。因此，建议关闭工作区中 vetur 对 html 的格式化功能
+
+```json
+{
+  "vetur.format.defaultFormatter.html": "none"
+}
 ```
 
 ## 配置说明
@@ -80,7 +95,7 @@ module.exports = {
 [3]: https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base
 [4]: https://vuejs.org/v2/style-guide/index.html
 [5]: https://github.com/prettier/eslint-plugin-prettier
+[6]: https://help.github.com/en/github/using-git/configuring-git-to-handle-line-endings
 [8]: https://github.com/prettier/prettier/issues/6061
 [9]: https://www.zhihu.com/question/20298345/answer/14670020
 [10]: https://eslint.org/
-[11]: https://cli.vuejs.org/
